@@ -4,8 +4,8 @@ import com.spring.springApplication.entity.User;
 
 import java.util.List;
 
-public interface UserSirvise {
+public interface UserService {
 
-    User addUser(User user);
     List<User> getAll();
+    List<User> getRichestUser();
 }

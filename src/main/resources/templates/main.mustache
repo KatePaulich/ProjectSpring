@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>BankInfo</title>
+</head>
+<body>
+<div>
+    <form action="richestUser" method="post">
+        <input type="submit" name="richestUser" value="Richest user">
+    </form>
+</div>
+<div>
+    <form action="summ" method="post">
+        <input type="submit" name="summ" value="Summ">
+    </form>
+</div>
+
+<div>
+    {{#users}}
+        <div>
+            <span>{{id}}</span>
+            <span>{{name}}</span>
+            <span>{{surname}}</span>
+        </div>
+    {{/users}}
+</div>
+
+<div>
+    {{#accounts}}
+        <div>
+            <span>{{id}}</span>
+            <span>{{account}}</span>
+            <span>{{userId}}</span>
+        </div>
+    {{/accounts}}
+</div>
+
+
+</body>
+</html>
